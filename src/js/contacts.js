@@ -9,21 +9,8 @@ export default class Contacts extends Component {
 		this.state = {contacts: [] };
 	}
 
-	componentWillMount() {
-		ajax('http://api.github.com/users/:user.orgs').then(users=> {
-			this.setState({users});
-		});
-	}
-
-
-	getContact(contact) {
-		return (
-		<li key={contact.id}>
-		<Link to={`/contactDetails/${contact.id}`}>{contact.name}</Link>
-		</li>
-
-			)
-	}
+	
+	
 	 render () {
 	 	let contacts = this.state;
 	 	return (
