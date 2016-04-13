@@ -4,12 +4,6 @@ import { Link } from 'react-router';
 
 
 export default class Contacts extends Component {
-	constructor(...props) {
-		super(...props);
-		this.state = {contacts: [] };
-	}
-
-	
 	
 	 render () {
 	 	let contacts = this.state;
